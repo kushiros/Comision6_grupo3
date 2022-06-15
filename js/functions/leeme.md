@@ -1,0 +1,1 @@
+/* Carpeta con funciones. Luego las integrare al main.js */
