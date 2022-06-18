@@ -1,91 +1,120 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ITBANK</title>
-    <link rel="icon" href=sources/banco.png>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/home1.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ITBANK</title>
+  <link rel="icon" href=sources/banco.png>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/home1.css">
 </head>
 
 <body>
-    <content>
-        <div class="container">
-            <header>
-                <nav class="navbar navbar-expand-lg bg-light">
-                    <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html"><img src="sources/banco.png" class="logo" alt="Home"/></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Personas</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Empresas</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Turnos
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item" href="#">Reservar turno</a></li>
-                              <li><a class="dropdown-item" href="#">Cancelar turno</a></li>
-                              <li><hr class="dropdown-divider"></li>
-                              <li><a class="dropdown-item" href="#">Buscar fechas disponibles</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="Busqueda" placeholder="Busqueda" aria-label="Busqueda">
-                          <button class="btn btn-outline-success" type="submit">Buscar</button>
-                        </form>
-                      </div>
-                    </div>
-                </nav>
-
-            </header>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>¡Bienvenido!</h1>
-                        <p>Bienvenido a ITBANK, tu banco favorito.</p>
-                    </div>
-                </div>
-            </div>
-              <form>
-                <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Ingrese Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Nunca te enviaremos correos sin tu consentimiento.</div>
-                </div>
-                <div class="mb-3r">
-                  <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Mantenerme conectado</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Ingresar</button>
+  <content>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="sources/banco.png" class="logo" alt="Home" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Personas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Empresas</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Turnos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Reservar turno</a></li>
+                    <li><a class="dropdown-item" href="#">Cancelar turno</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Buscar fechas disponibles</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="Busqueda" placeholder="Busqueda" aria-label="Busqueda">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
-              
-        </div>
+            </div>
+          </div>
+        </nav>
 
-    </content>
-    <footer>
+      </header>
       <div class="container">
         <div class="row">
-            <div class="col-md-12">
-              <P>© 2022 - Banco de la ITBANK - Casa Matriz: Calle falsa 123, Trilogy of Error, Springfield.</P>
-            </div>
+          <div class="col-md-12">
+            <h1>¡Bienvenido!</h1>
+            <p>Bienvenido a ITBANK, tu banco favorito.</p>
+          </div>
         </div>
       </div>
-    </footer>
-    <script src="js/functions/fetchAPI.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Ingrese Email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">Nunca te enviaremos correos sin tu consentimiento.</div>
+        </div>
+        <div class="mb-3r">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Mantenerme conectado</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Ingresar</button>
+      </form>
+      <div id="informacion">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Agencia</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Compra</th>
+              <th scope="col">Venta</th>
+            </tr>
+          </thead>
+          <tbody id="table-info">
+          </tbody>
+        </table>
+      </div>
+      <div class="botones">
+        <button onclick="actualizarCotizaciones()">Actualizar Cotizaciones</button>
+        <button onclick="descargarCotizaciones()">Descargar Cotizaciones</button>
+      </div>
+
+      <script src="js/functions/fetchAPI.js"></script>
+    </div>
+
+  </content>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <P>© 2022 - Banco de la ITBANK - Casa Matriz: Calle falsa 123, Trilogy of Error, Springfield.</P>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
