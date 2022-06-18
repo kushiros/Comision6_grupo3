@@ -4,11 +4,18 @@ Colaboradores:
 
 
 Bravo, Leonel Baltazar
+
 Cejas, Daniela Anahí
+
 Dominguez, Juan Cruz
+
 Martinez, Brandon
+
 Medina, Oscar
+
 Prito, Sebastian Gabriel
+
 Zapata,Lucas
+
 
 Agradecimientos:
