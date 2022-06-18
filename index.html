@@ -37,7 +37,7 @@
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3 text-white" href="#features">About Us</a></li>
                 </ul>
-                <button class="btn rounded-pill px-3 mb-2 mb-lg-0 text-black" data-bs-toggle="modal"
+                <button onclick="actualizarCotizaciones()" class="btn rounded-pill px-3 mb-2 mb-lg-0 text-black" data-bs-toggle="modal"
                     style="background-color: #FEDE3B;" data-bs-target="#feedbackModal">
                     <span class="small">Dolar Now</span>
                 </button>
@@ -238,43 +238,97 @@
                     <button class="btn-close btn-close-black" type="button" data-bs-dismiss="modal"
                         aria-label="Close"></button>
                 </div>
-                <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="modal-body border-0 p-4" id="table-info">
+                    <div class="father-cards-dolar text-center fs-6">
+                        <div class="row justify-content-center">
+                            <div class="col">
+                                <div class="card m-1 border border-dark rounded-3">
+                                    <div class="card-header fw-bolder">DOLAR OFICIAL</div>
+                                    <div class="card-body p-0">
+                                        <div class="card-group">
+                                            <div class="card border m-0 rounded-0">
+                                                <div class="card-header fw-lighter fs-6">COMPRA</div>
+                                                <div class="card-body dolar-value compravalor" id="data.0.casa.compra">$</div>
+                                            </div>
+                                            <div class="card border m-0 rounded-0">
+                                                <div class="card-header fw-lighter fs-6">VENTA</div>
+                                                <div class="card-body dolar-value ventavalor" id="data.0.casa.venta">$</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer agenciavalor" id="data.0.casa.agencia">AGENCIA </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="card m-1 border border-dark rounded-3">
+                                <div class="card-header fw-bolder">BLUE</div>
+                                <div class="card-body p-0">
+                                    <div class="card-group">
+                                        <div class="card border m-0 rounded-0">
+                                            <div class="card-header fw-lighter fs-6">COMPRA</div>
+                                            <div class="card-body dolar-value compravalor" id="data.1.casa.compra">$</div>
+                                        </div>
+                                        <div class="card border m-0 rounded-0">
+                                            <div class="card-header fw-lighter fs-6">VENTA</div>
+                                            <div class="card-body dolar-value ventavalor" id="data.1.casa.venta">$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer agenciavalor" id="data.1.casa.agencia">AGENCIA </div>
+                            </div>
+                            <div class="card m-1 border border-dark rounded-3">
+                                <div class="card-header fw-bolder">CONTADO CON LIQUI</div>
+                                <div class="card-body p-0">
+                                    <div class="card-group">
+                                        <div class="card border m-0 rounded-0">
+                                            <div class="card-header fw-lighter">COMPRA</div>
+                                            <div class="card-body dolar-value compravalor" id="data.3.casa.compra">$</div>
+                                        </div>
+                                        <div class="card border m-0 rounded-0">
+                                            <div class="card-header fw-lighter">VENTA</div>
+                                            <div class="card-body dolar-value ventavalor" id="data.3.casa.venta">$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer agenciavalor" id="data.3.casa.agencia">AGENCIA </div>
+                            </div>
+                        </div>
+                        <div class="card-group">
+                            <div class="card m-1 border border-dark rounded-3">
+                                <div class="card-header fw-bolder">BOLSA</div>
+                                <div class="card-body p-0">
+                                    <div class="card-group">
+                                        <div class="card border m-0 rounded-0">
+                                            <div class="card-header fw-lighter">COMPRA</div>
+                                            <div class="card-body dolar-value compravalor" id="data.4.casa.compra">$</div>
+                                        </div>
+                                        <div class="card border m-0 rounded-0">
+                                            <div class="card-header fw-lighter">VENTA</div>
+                                            <div class="card-body dolar-value ventavalor" id="data.4.casa.venta">$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer agenciavalor" id="data.4.casa.agencia">AGENCIA </div>
+                            </div>
+                            <div class="card m-1 border border-dark rounded-3">
+                                <div class="card-header fw-bolder">DOLAR</div>
+                                <div class="card-body p-0">
+                                    <div class="card-group">
+                                        <div class="card rounded-0">
+                                            <div class="card-header fw-lighter">COMPRA</div>
+                                            <div class="card-body dolar-value compravalor" id="data.7.casa.compra">$</div>
+                                        </div>
+                                        <div class="card rounded-0">
+                                            <div class="card-header fw-lighter">VENTA</div>
+                                            <div class="card-body dolar-value ventavalor" id="data.7.casa.venta">$</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer agenciavalor" id="data.7.casa.agencia">AGENCIA </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -288,6 +342,7 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
