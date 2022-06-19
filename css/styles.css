@@ -4512,7 +4512,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4565,8 +4565,9 @@ textarea.form-control-lg {
 .card-header {
   padding: 0.5rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(0, 0, 0, 0);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  /*color: #f0f0f0;*/
 }
 .card-header:first-child {
   border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
@@ -4574,7 +4575,7 @@ textarea.form-control-lg {
 
 .card-footer {
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: rgba(255, 255, 255, 0.6);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 .card-footer:last-child {
@@ -4661,6 +4662,13 @@ textarea.form-control-lg {
 .card-group > .card:not(:first-child) .card-footer {
     border-bottom-left-radius: 0;
   }
+}
+.type-name {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  color: #f0f0f0;
 }
 
 .accordion-button {
@@ -5578,6 +5586,7 @@ textarea.form-control-lg {
   position: relative;
   flex: 1 1 auto;
   padding: 1rem;
+  background-color:rgba(254,222,59, 0.5)
 }
 
 .modal-footer {
