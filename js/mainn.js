@@ -46,7 +46,6 @@ function actualizarCotizaciones() {
         }
 })}
 
-
 /*Con la siguiente funcion descargamos el archivo Json completo tal y como nos lo entrega la API */
 function descargarCotizaciones() {
   fetch(API_URL)
