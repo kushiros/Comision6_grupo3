@@ -3,8 +3,8 @@ Este es el repositorio perteneciente a Smart Cookies, el fabuloso grupo 3 de la 
 Colaboradores:
 
 - Bravo, Leonel Baltazar
-- Cejas, Daniela Anahí
-- Dominguez, Juan Cruz
+- ~~Cejas, Daniela Anahí~~
+- ~~Dominguez, Juan Cruz~~
 - Martinez, Brandon
 - Prieto, Sebastian Gabriel
 - Zapata,Lucas
